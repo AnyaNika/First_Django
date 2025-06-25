@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
     return render(request, 'main/index.html', {'caption': "CatDjango"})
@@ -7,8 +6,8 @@ def index(request):
 def new(request):
     return render(request, 'main/new.html')
 
-# def data(request):
-#     return HttpResponse("<h1>Это третья страница моего проекта на Django, которая называется data.</h1>")
-#
-# def test(request):
-#     return HttpResponse("<h1>Это четвертая страница моего проекта на Django, которая называется test.</h1>")
+def page3(request):
+    return render(request, 'main/page3.html')
+
+def page4(request):
+    return render(request, 'main/page4.html')

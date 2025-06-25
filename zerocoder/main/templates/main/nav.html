@@ -1,4 +1,12 @@
-<ul>
-   <li><a href="">Главная страница</a></li>
-    <li><a href="">Вторая страница</a></li>
-</ul>
+
+{% load static %}
+<aside>
+    <img src="{% static 'main/img/cat.png' %}" alt="Котик с голубыми глазами" width="150px">
+    <span>CatDjango</span>
+    <ul>
+        <li><a href="{% url 'home' %}">Первая</a></li>
+        <li><a href="{% url 'page2' %}">Вторая</a></li>
+        <li><a href="{% url 'page3' %}">Третья</a></li>
+        <li><a href="{% url 'page4' %}">Четвертая</a></li>
+    </ul>
+</aside>
