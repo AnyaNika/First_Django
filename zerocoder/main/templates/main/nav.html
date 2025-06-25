@@ -1,12 +1,21 @@
-
 {% load static %}
-<aside>
-    <img src="{% static 'main/img/cat.png' %}" alt="Котик с голубыми глазами" width="150px">
-    <span>CatDjango</span>
-    <ul>
-        <li><a href="{% url 'home' %}">Первая</a></li>
-        <li><a href="{% url 'page2' %}">Вторая</a></li>
-        <li><a href="{% url 'page3' %}">Третья</a></li>
-        <li><a href="{% url 'page4' %}">Четвертая</a></li>
+<aside class="bg-light p-4" style="width: 250px; height: 100vh; position: fixed;">
+    <div class="text-center mb-4">
+        <img src="{% static 'main/img/cat.png' %}" alt="Котик с голубыми глазами" class="img-fluid rounded-circle" width="150px">
+        <h2 class="mt-2">CatDjango</h2>
+    </div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}">Первая страница</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page2' %}">Вторая страница</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page3' %}">Третья страница</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page4' %}">Четвертая страница</a>
+        </li>
     </ul>
 </aside>
